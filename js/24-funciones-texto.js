@@ -65,6 +65,10 @@ var busqueda = texto1.indexOf("curso"); //Buscara la primer coincidencia del str
 
     busqueda = texto1.slice(16); //Mostrara el texto siguiente a la posicion indicada en el parametro
 
+    busqueda = texto1.split(); /*Introduce el string dentro de un array y podemos separar cad apalabra 
+    por espacios para realizar algunas funciones mas especificas
+    ejemplo: busqueda = texto1.split(" "); */
 
+    busqueda = texto1.trim(); /*quitara espacion iniciales y finales dle texto */
 
 console.log(busqueda);
