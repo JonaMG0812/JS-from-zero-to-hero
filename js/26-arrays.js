@@ -45,6 +45,31 @@ lenguajes.forEach((elemento, indice)=>{
     document.write("<li>" + indice + " - " + elemento + "</li>");
 })
 
+/* Forma de recorrer un array #3 */
+for(let lenguaje in lenguajes){
+    document.write("<li>" + lenguajes[lenguaje] + "</li>");
+}
+
 document.write("</ul>");
 
+/*Busqueda dentro de un array, fomra #1*/
+var busqueda = lenguajes.find(function(lenguaje){
+    return lenguaje == "JS"
+});
 
+/*Busqueda dentro de un array, fomra #2*/
+var busqueda2 = lenguajes.find(lenguaje => lenguaje == "JS");
+
+/*Busqueda dentro de un array por indice */
+var busqueda3 = lenguajes.findIndex(lenguaje => lenguaje == "JS");
+
+/*Busquedas con .some, nos ayuda a cencontrar elementos dentro de un array 
+que cumplan con una condicion en concreto*/
+var precios = [10,20,30,40,15,12,80];
+var busquedaPrecios = precios.some(precio => precio >= 80);
+console.log(busquedaPrecios);
+
+//Mostrando busquedas previas
+console.log(busqueda);
+console.log(busqueda2);
+console.log(busqueda3);
