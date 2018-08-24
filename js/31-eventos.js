@@ -27,6 +27,8 @@ var boton = document.querySelector("#boton");
 //Evento click llamado por funcion
 boton.addEventListener('click', function(){
     cambiarColor();
+
+    /*Podemos usar "this." el cual nos hace referencia a el elemento en el que estamos trabajando */
 });
 
 /*Evento Mouse over */
