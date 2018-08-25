@@ -1,5 +1,5 @@
-//Activar modo estricto, nos ayuda a mejorar la calidad de codigo y realizar mejores practicas
-//solo basta con usar lo siguiente en cada js file
+/*Activar modo estricto, nos ayuda a mejorar la calidad de codigo y realizar mejores practicas
+solo basta con usar lo siguiente en cada js file*/
 'use strict'
 
 //Trabajando con variables
